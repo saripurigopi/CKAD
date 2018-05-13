@@ -1,6 +1,13 @@
 # CKAD
 CNCF Certified Kubernetes Application Developer (CKAD)
 
+
+
+Online resources that will help you prepare for taking the Certified Kubernetes Application Developer (CKAD) Certification exam.
+
+**Disclaimer:** *This is not likely a comprehensive list as the exam will be a moving target with the fast pace of k8s development - please make a pull request if there something wrong or that should be added, or updated in here.*
+
+
 # CKAD Curriculum V1.0
 
 ## Core Concepts - 13%
