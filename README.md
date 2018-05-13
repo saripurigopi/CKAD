@@ -56,7 +56,9 @@ Online resources that will help you prepare for taking the Certified Kubernetes 
   * [Using StackDrive](https://kubernetes.io/docs/tasks/debug-application-cluster/logging-stackdriver/)
 * Understand how to monitor applications in Kubernetes
 * Understand debugging in Kubernetes
+  * [Application introspection](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application-introspection/)
+  * [Services](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/)
 
 ## Services & Networking - 13%
-* Understand Services
-* Demonstrate basic understanding of NetworkPolicies.
+* [Understand Services](https://kubernetes.io/docs/concepts/services-networking/service/)
+* [Demonstrate basic understanding of NetworkPolicies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
