@@ -17,7 +17,10 @@ Online resources that will help you prepare for taking the Certified Kubernetes 
 
 ## Core Concepts - 13%
 * [Understand kubernetes API Primitives](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
-* [Create and configure basic Pods]()
+* Create and configure basic Pods
+  * [Pod Overview](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/)
+  * [Pod lifecycle](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/)
+  * [configure Pods and containers](https://kubernetes.io/docs/tasks/configure-pod-container/)
 
 ## Multi-Container Pods - 10%
 * [Understand Multi-Container Pod design patterns (e.g: ambassador, adapter, sidecare)](https://kubernetes.io/blog/2015/06/the-distributed-system-toolkit-patterns/)
