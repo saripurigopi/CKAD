@@ -1,0 +1,22 @@
+---
+# kubectl get pods -l environment=development
+# kubectl get pods -l 'environment in (development),tier in (frontend)' --show-labels
+# kubectl get pods -l 'environment in (production, development)'
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-selector
+  labels:
+    app: node-selector
+    environment: development
+    tier: frontend
+spec:
+  containers:
+  - name: nginx-selector
+    image: nginx
+    resources:
+      limits:
+        cpu: 200m
+  nodeSelector:
+    disktype: ssd
