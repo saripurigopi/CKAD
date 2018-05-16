@@ -31,6 +31,7 @@ Online resources that will help you prepare for taking the Certified Kubernetes 
     * [Using labels effectively](https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/#using-labels-effectively)
   * [NodeSelector](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/)
   * [Annotations overview](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/)
+    * [kubectl annotate](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#annotate)
 * Understand Deployments and how to perform rolling updates.
   * [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
   * [rolling updates](https://kubernetes.io/docs/tutorials/kubernetes-basics/update-intro/)
