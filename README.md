@@ -35,7 +35,7 @@ Online resources that will help you prepare for taking the Certified Kubernetes 
 * Understand Deployments and how to perform rolling updates.
   * [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
   * [rolling updates](https://kubernetes.io/docs/tutorials/kubernetes-basics/update-intro/)
-* [Understand Deployments and how to perform rollbacks.]()
+* [Understand Deployments and how to perform rollbacks.](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-a-deployment)
 * Understand Jobs and CronJobs.
   * CronJobs
     * [Overview](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
