@@ -41,7 +41,7 @@ Online resources that will help you prepare for taking the Certified Kubernetes 
     * [Overview](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
     * [Running automated tasks with CronJob](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/)
   * Jobs
-    * [Overview](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#job-patterns)
+    * [Overview](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/)
     * [Parallel processing using Expansions](https://kubernetes.io/docs/tasks/job/parallel-processing-expansion/)
 ## Configuration - 18%
 * [Understand ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/)
