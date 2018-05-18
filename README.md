@@ -13,6 +13,15 @@ Online resources that will help you prepare for taking the Certified Kubernetes 
 * [FAQs](https://www.cncf.io/certification/expert/cka/faq/)
 
 
+## Before you begin
+
+You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. If you do not already have a cluster, you can create one by using [Minikube](https://kubernetes.io/docs/getting-started-guides/minikube), or **you can use one of these Kubernetes playgrounds:**
+
+* [Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
+* [Play with Kubernetes](http://labs.play-with-k8s.com/)
+
+
+
 # CKAD Curriculum V1.0
 
 ## Core Concepts - 13%
