@@ -56,6 +56,7 @@ You need to have a Kubernetes cluster, and the kubectl command-line tool must be
 * [Understand ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/)
   * [Configure redis using ConfigMap](https://kubernetes.io/docs/tutorials/configuration/configure-redis-using-configmap/)
 * [Understand SecurityContexts](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
+  * [SecurityContext v1 core](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#securitycontext-v1-core)
 * [Define an application's resources requirements](https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/)
 * [Create & consume Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 * [Understand ServiceAccounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
