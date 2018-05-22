@@ -13,6 +13,15 @@ Online resources that will help you prepare for taking the Certified Kubernetes 
 * [FAQs](https://www.cncf.io/certification/expert/cka/faq/)
 
 
+## Before you begin
+
+You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. If you do not already have a cluster, you can create one by using [Minikube](https://kubernetes.io/docs/getting-started-guides/minikube), or **you can use one of these Kubernetes playgrounds:**
+
+* [Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
+* [Play with Kubernetes](http://labs.play-with-k8s.com/)
+
+***Note: Both katacoda and PWK are free, you just need Google/GitHub/Docker account login to access.***
+
 # CKAD Curriculum V1.0
 
 ## Core Concepts - 13%
@@ -35,18 +44,20 @@ Online resources that will help you prepare for taking the Certified Kubernetes 
 * Understand Deployments and how to perform rolling updates.
   * [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
   * [rolling updates](https://kubernetes.io/docs/tutorials/kubernetes-basics/update-intro/)
-* [Understand Deployments and how to perform rollbacks.]()
+* [Understand Deployments and how to perform rollbacks.](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-a-deployment)
 * Understand Jobs and CronJobs.
   * CronJobs
     * [Overview](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
     * [Running automated tasks with CronJob](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/)
   * Jobs
-    * [Overview](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#job-patterns)
+    * [Overview](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/)
     * [Parallel processing using Expansions](https://kubernetes.io/docs/tasks/job/parallel-processing-expansion/)
 ## Configuration - 18%
 * [Understand ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/)
   * [Configure redis using ConfigMap](https://kubernetes.io/docs/tutorials/configuration/configure-redis-using-configmap/)
 * [Understand SecurityContexts](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
+  * [SecurityContext v1 core](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#securitycontext-v1-core)
+  * [Tuning Docker with the newest security enhancements](https://opensource.com/business/15/3/docker-security-tuning)
 * [Define an application's resources requirements](https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/)
 * [Create & consume Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 * [Understand ServiceAccounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
