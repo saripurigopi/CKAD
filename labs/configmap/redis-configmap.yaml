@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis
+spec:
+  containers:
+  - name: redis
+    image: kubernetes/redis:v1
+    env:
+    - name: MASTER
+      value: "true"
+    ports:
+    - containerPort: 6379
+    resources:
+      limits:
+        cpu: "0.1"
+    volumeMounts:
+    - mountPath: /redis-master-data
+      name: data
+    - mountPath: /redis-master
+      name: config
+  volumes:
+  - name: data
+    emptyDir: {}
+  - name: config
+    configMap:
+      name: example-redis-config
+      items:
+      - key: redis-config
+        path: redis.conf
+
+#   kubectl exec -it redis redis-cli
+#   127.0.0.1:6379> CONFIG GET maxmemory
+#   1) "maxmemory"
+#   2) "2097152"
+#   127.0.0.1:6379> CONFIG GET maxmemory-policy
+#   1) "maxmemory-policy"
+#   2) "allkeys-lru"

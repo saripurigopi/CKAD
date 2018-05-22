@@ -1,0 +1,21 @@
+---
+# Basic Template Expansion
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: process-item-$ITEM
+  labels:
+    jobgroup: job-example
+spec:
+  template:
+    metadata:
+      name: job-example
+      labels:
+        jobgroup: job-example
+    spec:
+      containers:
+      - name: c
+        image: busybox
+        command: ["sh", "-c", "echo Processing item $ITEM && sleep 5"]
+      restartPolicy: Never
+# for i in apple banana cherry; do cat process-item.yaml | sed s/$ITEM/cherry/ > job-cherry.yaml;done 
