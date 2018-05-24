@@ -1,0 +1,48 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: counter
+spec:
+  containers:
+  - name: count
+    image: busybox
+    args:
+    - /bin/sh
+    - -c
+    - >
+      i=0;
+      while true;
+      do
+        echo "i luv cncf" >> /tmp/log/input.log;
+        sleep 10;
+      done
+    volumeMounts:
+    - name: tmplog
+      mountPath: /tmp/log
+  - name: count-agent
+    image: lfccncf/fluentd:v0.12
+    args:
+    - /bin/sh
+    - -c
+    - >
+      i=0;
+      while true;
+      do
+        tail -n1 /tmp/log/input.log
+        sleep 10;
+      done
+    env:
+    - name: FLUENTD_ARGS
+      value: -c /etc/fluentd-config/fluentd.conf
+    volumeMounts:
+    - name: tmplog
+      mountPath: /tmp/log
+    - name: config-volume
+      mountPath: /etc/fluentd-config
+  volumes:
+  - name: tmplog
+    emptyDir: {}
+  - name: config-volume
+    configMap:
+      name: fluentd-config
