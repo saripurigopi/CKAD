@@ -11,10 +11,9 @@ spec:
     - /bin/sh
     - -c
     - >
-      i=0;
       while true;
       do
-        echo "i luv cncf" >> /tmp/log/input.log;
+        echo "$(date);" >> /tmp/log/input.log;
         sleep 10;
       done
     volumeMounts:
@@ -26,7 +25,6 @@ spec:
     - /bin/sh
     - -c
     - >
-      i=0;
       while true;
       do
         tail -n1 /tmp/log/input.log
