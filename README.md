@@ -19,6 +19,7 @@ You need to have a Kubernetes cluster, and the kubectl command-line tool must be
 
 * [Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
 * [Play with Kubernetes](http://labs.play-with-k8s.com/)
+* [Play with K8S Classroom by Docker, Inc](https://training.play-with-kubernetes.com)
 
 ***Note: Both katacoda and PWK are free, you just need Google/GitHub/Docker account login to access.***
 
